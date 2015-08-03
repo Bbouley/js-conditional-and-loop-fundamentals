@@ -17,8 +17,39 @@ var yourCode = {
       return newArray + (' oh my.');
     },
 
-  printNumbers: function(num){
-    return 'test';
+  printBracketedNumbers: function(num){
+    var string = '';
+    for (var i = 0; i <= num; i++) {
+      string = string.concat('['+i+']');
+    }
+    return string;
+  },
+
+  sumOfN: function(n){
+    var num = 0;
+    for (var i = 0; i <= n; i++) {
+      num += i;
+    }
+    return num;
+  },
+
+  moviesFor: function(actor){
+
+    switch(actor){
+      case 'Robin Williams':
+        return 'Jumanji, Hook, Good Will Hunting';
+      case 'Sandra Bullock':
+        return 'Gravity, The Lake House, The Blind Side';
+      case 'Daniel Radcliffe':
+        return 'All of the Harry Potters';
+      default:
+        return 'Please provide an actor or actress';
+    }
+
+  },
+
+  joinWithForAndIndex: function(array){
+
   }
 
 };
